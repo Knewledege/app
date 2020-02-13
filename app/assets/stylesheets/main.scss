@@ -1,0 +1,49 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+.main{
+   margin:0px;
+   padding:0px;
+   position:relative;
+   height:200px;
+   width:100%;
+   h1{
+      font-size: 100px;
+      text-align: center;
+   }
+   ul{
+      height:auto;
+      width:auto;
+      margin: 20px auto;
+      padding:auto;
+      position:absolute;
+      top: 80%;
+      left: 50%;
+      -ms-transform: translate(-50%,-80%);
+      -webkit-transform : translate(-50%,-80%);
+      transform : translate(-50%,-80%);
+      li {
+         display: inline;
+         text-align: center;
+         list-style: none;
+         margin: auto 30px;
+         padding:5px 40px;
+      }
+      #Threadlist_link{
+         height:auto;
+         width:auto;
+         margin: 20px 30px;
+         padding:auto;  
+         position:absolute;
+         top: 100%;
+         left: 50%;
+         -ms-transform: translate(-50%,-100%);
+         -webkit-transform : translate(-50%,-100%);
+         transform : translate(-50%,-100%);
+      }
+   }
+}
+
+

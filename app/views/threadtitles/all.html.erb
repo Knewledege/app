@@ -1,0 +1,15 @@
+<%= render 'layouts/header'%>
+<ul class = "threadtitles_list">
+  <% @threadtitles.each do |threadtitle| %>
+    <li>
+      <div class="link">
+        <%= link_to "#{threadtitle.name}", "/threadtitles/#{threadtitle.id}/" %>
+      </div>
+      <div class="info">
+        <p><%= threadtitle.created_at %></p>
+      </div>
+    </li>
+  <% end %>
+</ul>
+
+<br>

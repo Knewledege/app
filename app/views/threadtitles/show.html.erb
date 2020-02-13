@@ -1,0 +1,27 @@
+<%= render 'layouts/header'%>
+<div class = "chatthreadtitle">
+    <div class = "chat-body" >
+         <div id = "chat-list">
+            <h1><%=@threadtitle.name%></h1>
+        </div>
+        <div id = "chat-details">
+            <div id = "see">
+                <p id= "live"> Live</p><p id = "number">2,289</p>
+            </div>
+        </div>
+        <div class = "chat-main">
+            <div id = "chat-contents">
+                <div id="messages", data-threadtitle_id="<%= @threadtitle.id %>">
+                    <div class = "messages-main">
+                        <%= render @messages %>
+                    </div>
+                </div>
+            </div>
+            <div id = "chat-form">
+                <form>
+                <input class="textbutton" type="text" data-behavior="threadtitle_speaker">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

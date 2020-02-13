@@ -1,0 +1,107 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+/* sidebar */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+.row{
+   height:auto;
+   margin: 8% auto;
+   padding: auto;
+   width: 100%;
+   display:flex;
+   justify-content: center;
+   .col-md-6 {
+       height: auto;
+       margin: 10% auto; 
+       padding: 20px;
+       background: rgba(255, 255, 255, 0.829);
+       box-shadow: 20px 20px 20px 15px rgba(0,0,0,0.1)
+   }
+   .col-md-4{
+       width: 90%;
+       height: inherit;
+       margin: 0%;
+       padding: 0%;
+   }
+}
+
+aside {
+   section.user_info {
+     margin-top: 20px;
+   }
+   section {
+     padding: 10px 0;
+     margin-top: 20px;
+     &:first-child {
+       border: 0;
+       padding-top: 0;
+     }
+     span {
+       display: block;
+       margin-bottom: 3px;
+       line-height: 1;
+     }
+     h1 {
+       font-size: 1.4em;
+       text-align: left;
+       letter-spacing: -1px;
+       margin-bottom: 3px;
+       margin-top: 0px;
+       color: blue;
+     }
+     .alert {
+       width:800px;
+       }
+   }
+}
+ 
+.gravatar {
+   float: left;
+   margin-right: 10px;
+}
+ 
+.gravatar_edit {
+   margin-top: 15px;
+}
+/* forms */
+
+@mixin box_sizing {
+   -moz-box-sizing:    border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing:         border-box;
+}
+.form-control {
+   border: 1px solid #bbb;
+   width: 100%;
+   margin-bottom: 15px;
+   @include box_sizing;
+   input {
+       height: auto !important;
+   }
+}
+
+#error_explanation {
+   color: red;
+   ul {
+     color: red;
+     margin: 0 0 30px 0;
+   }
+}
+ 
+.field_with_errors {
+   @extend .has-error;
+   .form-control {
+     color: $state-danger-text;
+   }
+}
+
+.btn, .form-control, select{
+   border: 1px solid #bbb;
+   width: 100%;
+   margin-bottom: 15px;
+   @include box_sizing;
+   input {
+       height: auto !important;
+   }
+}

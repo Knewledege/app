@@ -1,0 +1,15 @@
+<%= render 'layouts/header'%>
+<div class = "main">
+   <h1>5ちゃんねる</h1>
+   <ul>
+      <% if logged_in? %>
+         <div id = "Threadlist_link">
+            <%= link_to "Threadlist_link", '/list' %>
+            <%= link_to "Create", '/threadtitlehome' %>
+         </div>
+      <%else%>
+         <li><%= link_to "Sing up", signup_path %></li>
+         <li><%= link_to "Log in", login_path %></li>
+      <%end%>
+   </ul>
+</div>

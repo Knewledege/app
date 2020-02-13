@@ -1,0 +1,16 @@
+<%= render 'layouts/header'%>
+<% flash.each do |message_type, message| %>
+  <div class="alert alert-<%= message_type %>"><%= message %></div>
+<% end %>
+<div class = "Threadtitle-body">
+  <div class = "threadtitle-form">
+    <%= form_for(:threadtitle, url: threadtitlehome_path) do |f| %>
+
+      <%= f.label :タイトル %>
+      <%= f.text_field :name, class: 'form-control', placeholder: 'タイトル'%>
+
+      <%= f.submit "Create", class: "btn btn-primary" %>
+      
+    <% end %>
+  </div>
+</div>

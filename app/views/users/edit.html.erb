@@ -1,0 +1,8 @@
+<%= render 'layouts/header'%>
+<h1>Editing User</h1>
+<% provide(:title, 'Edit User') %>
+<% provide(:button_text, 'Edit') %>
+<%= render 'form', user: @user %>
+
+<%= link_to 'Show', @user %> |
+<%= link_to 'Back', users_path %>
